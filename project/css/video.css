@@ -1,0 +1,26 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: repeat(auto-fill, minmax(350px, auto));
+  grid-auto-flow: dense;
+  padding-top: 30px; }
+
+.video {
+  width: 450px;
+  height: 350px;
+  overflow: hidden; }
+  .video iframe {
+    width: 450px;
+    height: 350px; }
+
+.video-item {
+  text-align: center;
+  margin: auto; }
+  .video-item ul {
+    padding: 0;
+    margin: 0; }
+  .video-item li {
+    list-style: none; }
+  .video-item p {
+    color: #404040; }

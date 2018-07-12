@@ -1,0 +1,23 @@
+.start_poster {
+  padding: 10px;
+  width: 100%; }
+
+.start_poster_concerts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3px; }
+
+.start_concert {
+  height: 160px;
+  width: 200px;
+  background: #867a7a;
+  margin: 3px;
+  list-style: none;
+  align-items: center; }
+
+.start_concert:hover {
+  height: 200px; }
+
+.start_media {
+  background: brown; }

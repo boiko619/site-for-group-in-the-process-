@@ -1,0 +1,92 @@
+$black:#000;
+.poster_grid{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows:  repeat(auto-fill, minmax(350px, auto));
+    grid-auto-flow: dense;
+    padding: 10px;
+    max-width: 1000px;
+}
+.poster_item{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-areas: "poster_foto poster_body";
+    overflow: hidden;
+}
+.poster_body{
+    grid-area: poster_body;
+    display: grid;
+    grid-template-columns:2fr 3fr minmax(145px,auto);
+    grid-template-areas: "poster_date poster_inform poster_buy";
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.poster_foto{
+    grid-area: poster_foto;
+    overflow: hidden;
+    width: 175px;
+    height: 245px;
+    padding: 0 0 0 15%;
+    img{
+        max-width: 100%;
+        min-width: 175px;
+        max-height: 100%;
+        min-height: 245px;
+    }
+
+
+} 
+.poster_date{
+    grid-area: poster_date;
+    
+    
+  }
+
+.poster_inform{
+    grid-area: poster_inform;
+
+}
+.poster_buy{
+    grid-area: poster_buy;
+    display: grid;
+    grid-template-areas: "."
+    "buy_ticket"
+    ".";
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#buy_ticket{
+    text-align: center;
+    grid-area: buy_ticket;
+    a{  border: solid;
+        border-color: black;
+        padding: 2%;   
+        
+
+        font-size: 1.3rem;
+        font-style: #fff;
+    }
+    
+}
+
+.city{
+    font-size: 2.5rem;
+    
+}
+.month{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.poster_date_number{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.club{
+    font-size: 1.2rem;
+    color: lighten($black, 20%);
+    
+}

@@ -1,0 +1,114 @@
+$black: #000;
+.music{
+    padding: 30px 10%;
+    
+    position: relative;
+}
+
+.album{
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    text-align:center;
+}
+.album_foto{
+    overflow: hidden;
+     img{
+    max-width: 100%;
+    min-width: 250px;
+    min-height: 250px;}
+}
+
+.album-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows:  repeat(auto-fill, minmax(350px, auto));
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+.music_album_of{
+    right: -100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    overflow: scroll;
+    top: 0;
+    transition: right, 0.6s;
+
+}
+.music_album_on{
+    right: 0;
+    
+    z-index: 15;
+}
+.music_album_grid{
+    display: grid;
+    grid-template-areas: "music_album_info"
+    "music_album";
+    grid-template-rows: 1fr 8fr;
+    margin: 40px 15%;
+    background: lighten($black, 80%);
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 78px 11px rgba(201,169,106,0.79);
+    -moz-box-shadow: 0px 0px 78px 11px rgba(201,169,106,0.79);
+    box-shadow: 0px 0px 78px 11px rgba(201,169,106,0.79);
+
+    border-radius: 10px 10px 10px 10px;
+}
+.music_album_info{
+grid-area: music_album_info;
+display: grid;
+grid-template-areas: " . . music_album_button";
+grid-template-columns: 1fr 1fr 80px;
+li{
+    list-style: none;
+}
+
+}
+
+.music_album{
+    grid-area: music_album;
+    display: grid;
+    
+    
+}
+
+
+
+    
+
+.music_album_button{
+    grid-area: music_album_button;
+    overflow: hidden;
+    .fa-times{
+        color: rgb(189, 189, 189);
+    }
+    
+}
+.link_to_buy{
+    
+    
+
+    ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;}
+    li{
+       padding: 0 80px;
+        list-style: none;
+    
+       
+
+    }
+
+    img{
+        max-width: 32.45px;
+        max-height: 32.45px;
+         vertical-align: middle;
+      
+    }
+}

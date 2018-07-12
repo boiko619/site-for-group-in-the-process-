@@ -1,0 +1,114 @@
+@media screen and (max-width:650px) {
+    .group_grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .album-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .link_to_buy{
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .music_album_grid{
+        margin: 40px 30px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .poster_foto{
+        padding: 0 0 0 20px;
+    }
+    .poster_grid{
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width:650px){
+    .poster_grid{
+        margin: 50px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows:  repeat(auto-fill, minmax(350px, auto));
+        grid-auto-flow: dense;
+        padding: 10px;
+       
+    }
+    .poster_item{
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+        grid-template-areas: "poster_foto poster_body";
+        overflow: hidden;
+    }
+    .poster_body{
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-areas: "poster_date"
+        "poster_inform"
+        "poster_buy";
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-area: poster_body;
+        text-align: center;
+        height: 245px;
+    }
+    .poster_date{
+        grid-area: poster_date;
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: center;
+
+        p{
+            
+            font-size: 1.2rem;
+            padding-left: 5px;
+        }
+    }
+    .poster_inform{
+        padding-left: 5px;
+        grid-area: poster_inform;
+        .city{
+            font-size: 1.5rem;
+        }
+    }
+    .poster_buy{
+        grid-area: poster_buy;
+    }
+
+}
+@media screen and (max-width:450px){
+    .poster_grid{
+        padding: 0;
+        margin: 0;
+    }
+    .poster_foto{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .oneflex{
+        .home_flex_item_content{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:700px){
+    .columns{
+        display: block;
+    }
+
+
+}
+
